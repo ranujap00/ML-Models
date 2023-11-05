@@ -1,0 +1,16 @@
+--Initial
+model = keras.Sequential([
+    keras.layers.Dense(16, input_shape=(14,), activation='relu'),
+    keras.layers.Dense(3, activation = 'sigmoid')
+])
+evaluation(loss, accuracy) => [0.7076431512832642, 0.6902654767036438]
+
+
+--Tuned
+model = keras.Sequential([
+    keras.layers.Dense(16, input_shape=(14,), activation='relu'),
+    keras.layers.Dense(32, activation='relu'),
+    keras.layers.Dense(32, activation='relu'),
+    keras.layers.Dense(3, activation = 'sigmoid')
+])
+evaluation(loss, accuracy) => [0.16500039398670197, 0.9327433705329895]

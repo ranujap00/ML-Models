@@ -6,7 +6,6 @@ import numpy as np
 
 raw_text = open("data.txt", 'r', encoding='utf-8').read()
 raw_text = raw_text.lower()
-print(raw_text)
 
 # chars = set(raw_text)  unique characters in the file
 chars = sorted(list(set(raw_text)))
